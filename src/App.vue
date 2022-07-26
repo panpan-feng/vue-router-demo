@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about/5">About</router-link>
+      <!-- <router-link to="/">Home</router-link>
+      <router-link to="/about/5">About</router-link> -->
     </div>
     <!-- 4.创建路由组件的占位 -->
     <router-view />

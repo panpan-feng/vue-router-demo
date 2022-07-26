@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about/5">About</router-link>
+    </div>
+    <!-- 4.创建路由组件的占位 -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
@@ -24,5 +24,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-right: 10px;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
